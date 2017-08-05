@@ -48,7 +48,7 @@ header {
 
 main {
   background: linear-gradient(180deg, white, $mainBackground);
-  height: 94vh;
+  height: 90vh;
   .row{
     .col-1{
       color: $mainColor;
@@ -98,5 +98,25 @@ main {
         padding: 0.8rem 2rem;
       }
     }
+  }
+}
+
+.chairs{
+  height: 45vh;
+  .col-4{
+    height: 40vh;
+    padding: 1.5vh;
+    margin-bottom: 6vh;
+  }
+
+  .col-4:first-of-type{
+    background: url("/images/box1_img.jpg") no-repeat center/contain;
+  }
+
+  .col-4:nth-of-type(2){
+    background: url("/images/box2_img.jpg") no-repeat center/contain;
+  }
+  .col-4:last-of-type{
+    border: 1px solid lightgrey;
   }
 }
