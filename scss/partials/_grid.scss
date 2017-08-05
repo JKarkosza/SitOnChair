@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+
+  .row {
+    @extend %clearfix;
+    [class*='col-']{
+      width: 100%;
+      float: left;
+
+      @media (min-width: $gridBreakPoint) {
+        width: 100% / $gridColumns;
+      }
+    }
+    @media (min-width: $gridBreakPoint){
+      @for $i from 1 through $gridColumns {
+        .col-#{$i}{
+          width: (100% / $gridColumns) * $i;
+        }
+      }
+    }
+  }
+}

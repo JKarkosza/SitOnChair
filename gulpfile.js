@@ -17,6 +17,7 @@ gulp.task('serve', ['rwd'], function() {
     });
 
     gulp.watch("./scss/*.scss", ['rwd']);
+    gulp.watch("./scss/partials/*.scss", ['rwd']);
 
     //Deploy na ftp
 //   gulp.watch("./css/*", ['deployCss']);
