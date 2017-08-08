@@ -248,6 +248,7 @@ main {
         height: 8rem;
         border: 2px solid $smallDetails;
         border-radius: 50%;
+        background: white;
         p:first-of-type{
           color: $smallDetails;
           font-size: 2.7rem;
@@ -326,6 +327,8 @@ main {
   }
 }
 
+
+// CONTACT
 .contact{
   height: 70vh;
   .col-12{
@@ -423,6 +426,28 @@ footer{
           font-weight: 800;
         }
       }
+    }
+  }
+}
+.prices{
+  .board{
+    &:hover,
+    &:hover > div:first-of-type{
+      background: $mainColor;
+    }
+    &:hover > div:first-of-type > div,
+    &:hover > a{
+      background: white;
+      color: $mainColor;
+    }
+    &:hover > p{
+      color: white;
+    }
+    &:hover > ul >li:nth-of-type(2n+1){
+      background: white;
+    }
+    &:hover > ul >li:nth-of-type(2n+2){
+      background: rgb(210, 217, 205);
     }
   }
 }
